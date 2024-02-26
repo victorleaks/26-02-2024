@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <script src="./bootstrap.bundle.min.js"></script>
-    <link href="./bootstrap.min.css">
+    <script src="./react-router.dom.production.min.js"></script>
     <script src="./popper.js"></script>
+    <link href="./bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="./bootstrap.bundle.min.js" crossorigin="anonymous"></script>   
     <script src="./react.development.js"></script>
     <script src="./react-dom.development.js"></script>
     <script src="./babel.min.js"></script>
-    <script src="./react-router-dom.production.min.js"></script>
 </head>
 
 <body>
@@ -16,13 +16,24 @@
     <div id="mydiv"></div>
 
     <script type="text/babel">
-        function Hello() {
-            return <h1>Hello World!</h1>;
+        function Nome(){
+            return <h2>Victor </h2>;
         }
-
+        function Sobrenome() { 
+            return <h1>Carneiro</h1>;
+        }
+        function Endereco() { 
+            return <h1>Senac</h1>;
+        }
         const container = document.getElementById('mydiv');
         const root = ReactDOM.createRoot(container);
-        root.render(<Hello />)
+        root.render(
+        <React.StrictMode>
+            <Nome />
+            <Sobrenome />
+            <Endereco />
+        </React.StrictMode>
+        );
     </script>
 
 </body>
