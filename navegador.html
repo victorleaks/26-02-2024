@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./react-router-dom.production.min.js"></script>
+    <script src="./popper.js"></script>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <script src="./bootstrap.bundle.min.js"></script>   
+    <script src="./react.development.js"></script>
+    <script src="./react-dom.development.js"></script>
+    <script src="./babel.min.js"></script>
+    <style>
+        body{
+            background-image: url();
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="mydiv">
+    </div>
+
+    <script type="text/babel">
+        
+        function Nome(){
+            return <h1>MATEUS</h1>
+        };
+        function Sobrenome(){
+            return <h1>HENRIQUE</h1>
+        };
+        function Endereco() {
+            return <h1>CAETANO</h1>
+        };
+
+        const Menu = (
+            <nav 
+            className={"navbar navbar-expand-lg bg-body-tertiary"}
+            >
+  
+                <div 
+                className={"container-fluid"}
+                >
+    
+                    <a 
+                    className={"navbar-brand"} 
+                    href={"#"}>
+
+                    Navbar
+
+                    </a>
+    
+                    <button 
+                    className={"navbar-toggler"} 
+                    type={"button"} 
+                    data-bs-toggle={"collapse"} 
+                    data-bs-target={"#navbarNav"} 
+                    aria-controls={"navbarNav"} 
+                    aria-expanded={"false"} 
+                    aria-label={"Toggle navigation"}
+                    >
+      
+                        <span 
+                        className={"navbar-toggler-icon"}
+                        >
+                        
+                        </span>
+
+                     </button>
+
+                <div 
+                className={"collapse navbar-collapse"} 
+                id={"navbarNav"}
+                >
+                    
+                    <ul 
+                    className={"navbar-nav"}
+                    >
+            
+                        <li 
+                        className={"nav-item"}
+                        >
+          
+                            <a 
+                            className={"nav-link active" }
+                            aria-current={"page"} 
+                            href={"#"}
+                            >
+                                
+                                Home
+                                
+                                </a>
+        
+                            </li>
+        
+                            <li 
+                            class={"nav-item"}
+                            >
+          
+                                <a 
+                                class={"nav-link"} 
+                                href={"#"}
+                                >
+                                    
+                                    Features
+                                    
+                                    </a>
+                            </li>
+                        <li 
+                        class={"nav-item"}
+                        >
+          
+                            <a 
+                            class={"nav-link"} 
+                            href={"#"}
+                            >
+                                
+                                Pricing
+                                
+                                </a>
+        
+                            </li>
+        
+                            <li 
+                            class={"nav-item"}
+                            >
+          
+                                <a 
+                                class={"nav-link disabled"}
+                                aria-disabled={"true"}
+                                >
+                                    
+                                    Disabled
+                                    
+                                    </a>
+        
+                                </li>
+      
+                                </ul>
+    
+                    </div>
+                </div>
+
+                </nav>
+            );
+
+        const container = document.getElementById('mydiv');
+        const root = ReactDOM.createRoot(container);
+        root.render(
+            <React.StrictMode>
+            <Nome/>
+            <Sobrenome/>
+            <Endereco/>
+            </React.StrictMode>
+            );
+            
+           
+    </script>
+
+</body>
+
+</html>
